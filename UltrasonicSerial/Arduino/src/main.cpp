@@ -8,7 +8,7 @@ int DISTANCE;
 
 void setup() {  
   // SERIAL
-  Serial.begin(9600);
+  Serial.begin(115200);
   // ULTRASONIC SENSOR
   pinMode(TRIG, OUTPUT);
   pinMode(ECHO, INPUT);

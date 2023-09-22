@@ -8,13 +8,13 @@ This example may be copied under the terms of the MIT license, see the LICENSE f
 #include <FastLED.h>
 
 // Wifi settings
-const char* ssid = "NERDINDUSTRIES";
-const char* password = "TgplZ2mmasandmann";
+const char* ssid = "Nerdindustries";
+const char* password = "f4c2k1n3z3s7";
 
 // LED settings
-const int numLeds = 59; // CHANGE FOR YOUR SETUP
+const int numLeds = 58; // CHANGE FOR YOUR SETUP
 const int numberOfChannels = numLeds * 3; // Total number of channels you want to receive (1 led = 3 channels)
-const byte dataPin = 25;
+const byte dataPin = 26;
 CRGB leds[numLeds];
 
 // Art-Net settings
@@ -151,7 +151,7 @@ void setup()
   ConnectWifi();
   artnet.begin();
   FastLED.addLeds<WS2812, dataPin, GRB>(leds, numLeds);
-  FastLED.setBrightness(20);
+  FastLED.setBrightness(30);
   initTest();
 
   memset(universesReceived, 0, maxUniverses);
